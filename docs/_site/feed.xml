@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Your Comic Title</title>
+    <description>Here's the description of your comic!</description>
+    <link>//</link>
+    <atom:link href="//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 11 Jul 2017 20:11:51 -0700</pubDate>
+    <lastBuildDate>Tue, 11 Jul 2017 20:11:51 -0700</lastBuildDate>
+    <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>4</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/pages/004.png&quot; alt=&quot;PAGE FOUR&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 23 Apr 2017 11:42:56 -0700</pubDate>
+        <link>//2017/04/23/004.html</link>
+        <guid isPermaLink="true">//2017/04/23/004.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>3</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/pages/003.png&quot; alt=&quot;PAGE THREE&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 23 Apr 2017 11:42:56 -0700</pubDate>
+        <link>//jekyll/update/2017/04/23/003.html</link>
+        <guid isPermaLink="true">//jekyll/update/2017/04/23/003.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>2</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/pages/002.png&quot; alt=&quot;PAGE TWO&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 23 Apr 2017 11:42:56 -0700</pubDate>
+        <link>//jekyll/update/2017/04/23/002.html</link>
+        <guid isPermaLink="true">//jekyll/update/2017/04/23/002.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>1</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/pages/001.png&quot; alt=&quot;PAGE ONE&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 23 Apr 2017 11:42:56 -0700</pubDate>
+        <link>//001</link>
+        <guid isPermaLink="true">//001</guid>
+        
+        
+        <category>page</category>
+        
+      </item>
+    
+  </channel>
+</rss>
