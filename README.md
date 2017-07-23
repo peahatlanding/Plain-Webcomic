@@ -1,7 +1,7 @@
 # Webcomic-Jekyll-Theme
 A simple webcomic theme for Jekyll, a static site generator. Built using Bootstrap.
 
-This theme is meant to offer a free and relatively easy webcomic hosting solution for artists with little or no coding experience. [Here's the user guide for this theme](#). 
+This theme is meant to offer a free and relatively easy webcomic hosting solution for artists with little or no coding experience. [Here's the user guide for this theme](https://peahatlanding.github.io/Webcomic-Jekyll-Theme/). 
 
 
 # Using This Theme
@@ -27,7 +27,7 @@ Here's the [Jekyll Installation Guide](https://jekyllrb.com/docs/installation/) 
 
 # STEP FOUR: Add your content!
 
-[Read about using the code here](/docs/howto.html).
+[Read about using the code here](https://peahatlanding.github.io/Webcomic-Jekyll-Theme/howto.html).
 
 ## Pushing to Github Pages
 
