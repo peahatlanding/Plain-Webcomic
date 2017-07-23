@@ -5,18 +5,362 @@
     <description>Here's the description of your comic!</description>
     <link>//</link>
     <atom:link href="//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 11 Jul 2017 20:11:51 -0700</pubDate>
-    <lastBuildDate>Tue, 11 Jul 2017 20:11:51 -0700</lastBuildDate>
+    <pubDate>Sun, 23 Jul 2017 10:49:00 -0700</pubDate>
+    <lastBuildDate>Sun, 23 Jul 2017 10:49:00 -0700</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Webcomic API</title>
+        <description>&lt;h1 id=&quot;webcomic-site-api&quot;&gt;Webcomic Site API&lt;/h1&gt;
+
+&lt;p&gt;Here’s how to modify basic things in your webcomic site. This is where it will be really useful to have &lt;a href=&quot;https://atom.io/&quot;&gt;a text editor&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This site is built using Bootstrap. If you want to make extensive changes, I recommend you take &lt;a href=&quot;https://www.codecademy.com/learn/learn-html-css&quot;&gt;the HTML/CSS course&lt;/a&gt; and &lt;a href=&quot;https://www.codecademy.com/courses/web-beginner-en-yjvdd/0/1&quot;&gt;the Bootstrap course&lt;/a&gt; on Codecademy. It’s REALLY easy if you have even basic knowledge of HTML/CSS and/or Bootstrap.&lt;/p&gt;
+
+&lt;p&gt;What do you want to do?&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Update content to the info pages&lt;/li&gt;
+  &lt;li&gt;Upload comic pages&lt;/li&gt;
+  &lt;li&gt;Change the page background or fonts&lt;/li&gt;
+  &lt;li&gt;Change the header background or fonts&lt;/li&gt;
+  &lt;li&gt;Change my comic’s title and description&lt;/li&gt;
+  &lt;li&gt;Update social media info or add social media icons.&lt;/li&gt;
+  &lt;li&gt;Add Google Analytics&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;i-want-to-update-content-to-the-info-pages&quot;&gt;I want to update content to the info pages!&lt;/h2&gt;
+
+&lt;p&gt;The theme comes with two info pages: About and Extras. You can edit the content by opening the markdown files called &lt;code class=&quot;highlighter-rouge&quot;&gt;about.md&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;extras.md&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Markdown is really easy to write in. For example, if you want to make a bullet list, format it like so:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; My Cats
+
+  - Loki
+  - Meeko
+  - Parking Lot Cat
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;It will look like this:&lt;/p&gt;
+
+&lt;p&gt;My Cats&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Loki&lt;/li&gt;
+  &lt;li&gt;Meeko&lt;/li&gt;
+  &lt;li&gt;Parking Lot Cat&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you want to add a link, format it like so:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[I want to learn more code!](https://www.codecademy.com/)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;It will look like this:
+&lt;a href=&quot;https://www.codecademy.com/&quot;&gt;I want to learn more code!&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;i-want-to-upload-pages&quot;&gt;I want to upload pages!&lt;/h2&gt;
+
+&lt;p&gt;Great!! THIS IS SO EASY I’m so excited for you!!&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Name your image file after the page number. For example: 003 (This is optional but makes things a lot easier)&lt;/li&gt;
+  &lt;li&gt;Drop your new page into the images folder.&lt;/li&gt;
+  &lt;li&gt;Go into the _posts folder and create a new Markdown file.&lt;/li&gt;
+  &lt;li&gt;Paste the following content, only replace the {page number} with the actual page number. It’s faster if you duplicate an existing page and just update the page numbers wherever they appear.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;---
+layout: comic
+title:  &quot;1&quot;
+date:   2017-04-23 11:42:56 -0700
+categories: page
+---
+![](/pages/001.png)
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;That’s it!!! Rebuild your site and it’ll appear along with the rest of your pages. It will also appear in your Archives page.&lt;/p&gt;
+
+&lt;p&gt;If you’ve already pushed your site to live on Github Pages, you can just add the image file and the markdown file to your repository.&lt;/p&gt;
+
+&lt;h2 id=&quot;change-the-page-background-or-fonts&quot;&gt;Change the page background or fonts&lt;/h2&gt;
+&lt;p&gt;This will require you to edit the css file. It’s not necessary, but I recommend you learn &lt;a href=&quot;https://www.w3schools.com/css/css_syntax.asp&quot;&gt;a tiny bit about CSS syntax&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Open your directory and open the css folder. Then, open comic.css.&lt;/li&gt;
+  &lt;li&gt;Ctrl+F “HEADER” to quickly find the header styles.&lt;/li&gt;
+  &lt;li&gt;To change the header background, replace the background URL.&lt;/li&gt;
+  &lt;li&gt;To change the header fonts, update the font family for jumbotron h1 and jumbotron p.&lt;/li&gt;
+  &lt;li&gt;Make sure each line still ends with a semicolon!&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;i-want-to-change-the-header-background-or-fonts&quot;&gt;I want to change the header background or fonts!&lt;/h2&gt;
+
+&lt;p&gt;This will require you to edit the css file. It’s not necessary, but I recommend you learn &lt;a href=&quot;https://www.w3schools.com/css/css_syntax.asp&quot;&gt;a tiny bit about CSS syntax&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Open your directory and open the css folder. Then, open comic.css.&lt;/li&gt;
+  &lt;li&gt;Ctrl+F “HEADER” to quickly find the header styles.&lt;/li&gt;
+  &lt;li&gt;To change the header background, replace the backgrould URL.&lt;/li&gt;
+  &lt;li&gt;To change the header fonts, update the font family for jumbotron h1 and jumbotron p.&lt;/li&gt;
+  &lt;li&gt;Make sure each line still ends with a semicolon!&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I use Google Fonts for the website guide. &lt;a href=&quot;https://fonts.google.com/&quot;&gt;More about Google Fonts&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Note:&lt;/em&gt; You can do a lot more if you know a bit of CSS. &lt;a href=&quot;#&quot;&gt;Consider learning some&lt;/a&gt;!&lt;/p&gt;
+
+&lt;h2 id=&quot;i-want-to-change-my-comics-title-and-description&quot;&gt;I want to change my comic’s title and description!&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Open your directory and open the config.yml file.&lt;/li&gt;
+  &lt;li&gt;Change the values for title and description. While you’re here, you can also change the text that will appear on the browser tab!&lt;/li&gt;
+  &lt;li&gt;Save your changes, then rebuild your site using &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;. Anytime you make changes to the config.yml file, you’ll need to rebuild your site.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;update-social-media-info-or-add-social-media-icons&quot;&gt;Update social media info or add social media icons.&lt;/h2&gt;
+
+&lt;h3 id=&quot;add-social-media&quot;&gt;Add social media&lt;/h3&gt;
+&lt;p&gt;This theme comes with a small HTML snippet that includes icons for Tumblr and Twitter.&lt;/p&gt;
+
+&lt;p&gt;To add these icons:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Copy the text below.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;socialmedia.html&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Paste it into the markup file where you want it to go. This snippet of code tells Jekyll to pull in the bit of HTML code inside a file called socialmedia in the folder called _includes.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;IMPORTANT:&lt;/strong&gt; Remove the slash from the first bracket.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;update-social-media-info&quot;&gt;Update social media info&lt;/h3&gt;
+
+&lt;p&gt;Open the config.yml file and update these fields with your Tumblr or Twitter URLs.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;twitter_username:
+tumblr_username:
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;If you want to add other social media accounts other than Tumblr or Twitter, you’ll need to add button code to the HTML code for the social media icons.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;First, go to &lt;a href=&quot;http://fontawesome.io/icons/#brand&quot;&gt;Font Awesome&lt;/a&gt; and search for the brand icon you want to use. Click on the icon and get the &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;i&amp;gt;&lt;/code&gt; tag. For example, the &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;i&amp;gt;&lt;/code&gt; tag for Etsy is &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;i class=&quot;fa fa-paypal&quot; aria-hidden=&quot;true&quot;&amp;gt;&amp;lt;/i&amp;gt;&lt;/code&gt;.
+&lt;em&gt;Note:&lt;/em&gt; If Font Awesome doesn’t have the icon you want, you’ll need to just make your own.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Go to your directory and open the _includes folder. Then, open the socialmedia file or the authorsocialmedia.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Paste in the following code, but with the &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;i&amp;gt;&lt;/code&gt; tag you got from Font Awesome.
+&lt;code class=&quot;highlighter-rouge&quot;&gt;
+&amp;lt;a href=&quot; &quot;&amp;gt;
+ &amp;lt;i class=&quot;fa fa-etsy fa-3x&quot; aria-hidden=&quot;true&quot;&amp;gt;&amp;lt;/i&amp;gt;
+&amp;lt;/a&amp;gt;
+&lt;/code&gt;
+In the &lt;a&gt; tag, enter the URL for the button.&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;i-want-to-add-google-analytics&quot;&gt;I want to add Google Analytics!&lt;/h2&gt;
+
+&lt;p&gt;To use Google Analytics to monitor traffic to your site, you’ll need to get a Javascript tracking snippet and put it in your website.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://analytics.google.com&quot;&gt;Make a Google Analytics account&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://support.google.com/analytics/answer/1008080?visit_id=1-636363448096800079-2450161999&amp;amp;rd=1#trackingID&quot;&gt;Get the Javascript tracking snippet&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Go to your directory and open the &lt;code class=&quot;highlighter-rouge&quot;&gt;_layouts&lt;/code&gt; folder. Then, open your &lt;code class=&quot;highlighter-rouge&quot;&gt;default.html&lt;/code&gt; file. Find where it says &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;!--Google Analytics--&amp;gt;&lt;/code&gt; and paste your Javascript tracking snippet underneath.&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+        <pubDate>Thu, 13 Jul 2017 14:10:24 -0700</pubDate>
+        <link>//guide</link>
+        <guid isPermaLink="true">//guide</guid>
+        
+        
+        <category>docs</category>
+        
+        <category>howto</category>
+        
+      </item>
+    
+      <item>
+        <title>Webcomic Jekyll Theme!</title>
+        <description>&lt;h1 id=&quot;prerequisites&quot;&gt;PREREQUISITES&lt;/h1&gt;
+
+&lt;p&gt;You will need to install some things in order to use the site.&lt;/p&gt;
+
+&lt;h2 id=&quot;a-github-account&quot;&gt;A Github Account&lt;/h2&gt;
+
+&lt;p&gt;Once your site is completed, you’ll be hosting it on Github Pages, a free service offered to anyone with a Github account.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/join&quot;&gt;Sign up for Github here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; You can use a different webhost if you want. But Github Pages works well with Jekyll because you can push your Jekyll source files directly to&lt;/p&gt;
+
+&lt;h2 id=&quot;a-text-editor&quot;&gt;A Text Editor&lt;/h2&gt;
+
+&lt;p&gt;Most computers come pre-installed with a
+This isn’t required, but it’s way easier and more fun to work on markdown files with a text editor. Try &lt;a href=&quot;https://www.sublimetext.com/&quot;&gt;Sublime&lt;/a&gt; or &lt;a href=&quot;https://atom.io/&quot;&gt;Atom&lt;/a&gt; (both free).&lt;/p&gt;
+
+&lt;p&gt;I use &lt;a href=&quot;https://atom.io/&quot;&gt;Atom&lt;/a&gt; with the &lt;a href=&quot;https://atom.io/themes/fairyfloss&quot;&gt;fairyfloss&lt;/a&gt; theme for maximum kawaii.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/atom.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;open-terminal&quot;&gt;Open Terminal&lt;/h2&gt;
+
+&lt;p&gt;If you’re on a Mac, go to your search bar and open Terminal. It will look something like this.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/terminal.png&quot; alt=&quot;&quot; /&gt;
+Once you install Jekyll, you’ll tell it what to do by typing commands here. I’ll tell you exactly what to type, but I do recommend taking some time to learn these really easy commands.&lt;/p&gt;
+
+&lt;h2 id=&quot;install-jekyll&quot;&gt;Install Jekyll&lt;/h2&gt;
+
+&lt;p&gt;The easiest way to install Jekyll is to using RubyGems.
+&lt;a href=&quot;https://rubygems.org/pages/download&quot;&gt;Ruby Installation Guide.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Once you have Ruby installed, you can simply open up your Terminal and type&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gem install jekyll
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://jekyllrb.com/docs/installation/&quot;&gt;Jekyll Installation Guide&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Now that you have Jekyll installed, let’s try using it to generate a site. Go to Terminal and navigate to a folder where you want your website to be. Then, type the following and hit enter:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jekyll new my-comic
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;This will create a new folder called “my-comic” and fill it with the folders and files Jekyll needs to build a static site.&lt;/p&gt;
+
+&lt;p&gt;Next, you’ll need to navigate into that new folder.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd my-comic
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;to move inside that directory, then type&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jekyll serve
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This will build your website and host it temporarily on your local server. Paste &lt;code class=&quot;highlighter-rouge&quot;&gt;http://127.0.0.1:4000&lt;/code&gt; into a browser to see it!&lt;/p&gt;
+
+&lt;h1 id=&quot;step-two-download-the-webcomic-code&quot;&gt;STEP TWO: Download the Webcomic Code&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Go here and download the code. You can save it to wherever you want; just make sure you remember where it is.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Use Terminal to navigate to where you’ve saved the directory. Type &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt; into Terminal.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;If everything’s in the right place, Jekyll will serve the webcomic site to your local server! Paste &lt;code class=&quot;highlighter-rouge&quot;&gt;http://127.0.0.1:4000&lt;/code&gt; into a browser to see it!&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;step-four-add-your-content&quot;&gt;STEP FOUR: Add your content!&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;/docs/howto.html&quot;&gt;Read about using the code here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;pushing-to-github-pages&quot;&gt;Pushing to Github Pages&lt;/h2&gt;
+
+&lt;p&gt;Github has a fantastic guide for creating a Github Page and pushing your code to live.
+&lt;a href=&quot;https://pages.github.com/&quot;&gt;Github Pages Guide&lt;/a&gt;
+I won’t waste your time trying to duplicate it. When you’re finished building your site, go ahead and try it!&lt;/p&gt;
+</description>
+        <pubDate>Thu, 13 Jul 2017 14:10:24 -0700</pubDate>
+        <link>//docs/start/2017/07/13/startguide.html</link>
+        <guid isPermaLink="true">//docs/start/2017/07/13/startguide.html</guid>
+        
+        
+        <category>docs</category>
+        
+        <category>start</category>
+        
+      </item>
+    
+      <item>
+        <title>Intro for Jumbotron</title>
+        <description>&lt;h1 id=&quot;webcomic-jekyll-theme&quot;&gt;WEBCOMIC JEKYLL THEME!&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/peahatlanding/Webcomic-Jekyll-Theme&quot; class=&quot;btn btn-primary&quot; role=&quot;button&quot; aria-disabled=&quot;true&quot;&gt;Download Website Files&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This is the guide for how to use a webcomic theme for Jekyll. If you already know how to use Jekyll and Bootstrap, go ahead and just &lt;a href=&quot;https://github.com/peahatlanding/Webcomic-Jekyll-Theme&quot;&gt;download the code here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you’re more of a beginner, this guide is for you!&lt;/p&gt;
+</description>
+        <pubDate>Thu, 13 Jul 2017 14:10:24 -0700</pubDate>
+        <link>//docs/jumbotron/2017/07/13/intro.html</link>
+        <guid isPermaLink="true">//docs/jumbotron/2017/07/13/intro.html</guid>
+        
+        
+        <category>docs</category>
+        
+        <category>jumbotron</category>
+        
+      </item>
+    
+      <item>
+        <title>Webcomic Jekyll Theme!</title>
+        <description>&lt;h1 id=&quot;about-this-guide&quot;&gt;About this Guide&lt;/h1&gt;
+
+&lt;p&gt;This guide will show you how to use Jekyll to build a webcomic site and host it for free using Github Pages.&lt;/p&gt;
+
+&lt;p&gt;This does require a bit of coding, but it’s not too difficult to learn! If you need help while working on this, feel free to &lt;a href=&quot;https://twitter.com/peahat&quot;&gt;@ me on Twitter&lt;/a&gt;; I’d be happy to chat with anyone working through this guide.&lt;/p&gt;
+
+&lt;h2 id=&quot;whats-jekyll&quot;&gt;What’s Jekyll?&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; is a free static site generator, which takes a collection of HTML, CSS, markup files and turns them into HTML.&lt;/p&gt;
+
+&lt;p&gt;Your files need to be in a certain directory structure for the static site generator to work. When you start working on the website code, you’ll be working with the files in this directory. I recommend you learn a bit about how this directory is structured, since you’ll need to go into the directory to&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Note:&lt;/em&gt; Jekyll is pretty cool! The more you learn about how to use it, the more you can do with your webcomic site.&lt;/p&gt;
+
+&lt;h2 id=&quot;whats-github-pages&quot;&gt;What’s Github Pages?&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://github.com&quot;&gt;Github&lt;/a&gt; is a platform for project hosting (mostly code) and version control. You’ll be using it to host your website files.
+&lt;a href=&quot;https://pages.github.com/&quot;&gt;Github Pages&lt;/a&gt; is a free static site hosting service for Github users. You can push Jekyll website files to a special Github repository and it’ll build and host the website for you.&lt;/p&gt;
+
+&lt;p&gt;You don’t need to worry about this right now, but if you’re curious, here’s &lt;a href=&quot;https://pages.github.com/&quot;&gt;Github’s guide on creating your Github page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;this-guide-is-a-constant-work-in-progress&quot;&gt;THIS GUIDE IS A CONSTANT WORK IN PROGRESS!!!&lt;/h2&gt;
+
+&lt;p&gt;If you get stuck or confused at any time, please let me know!&lt;/p&gt;
+</description>
+        <pubDate>Thu, 13 Jul 2017 14:10:24 -0700</pubDate>
+        <link>//docs/start/2017/07/13/about.html</link>
+        <guid isPermaLink="true">//docs/start/2017/07/13/about.html</guid>
+        
+        
+        <category>docs</category>
+        
+        <category>start</category>
+        
+      </item>
     
       <item>
         <title>4</title>
         <description>&lt;p&gt;&lt;img src=&quot;/pages/004.png&quot; alt=&quot;PAGE FOUR&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 23 Apr 2017 11:42:56 -0700</pubDate>
-        <link>//2017/04/23/004.html</link>
-        <guid isPermaLink="true">//2017/04/23/004.html</guid>
+        <link>//page/2017/04/23/004.html</link>
+        <guid isPermaLink="true">//page/2017/04/23/004.html</guid>
         
+        
+        <category>page</category>
         
       </item>
     
@@ -25,13 +369,11 @@
         <description>&lt;p&gt;&lt;img src=&quot;/pages/003.png&quot; alt=&quot;PAGE THREE&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 23 Apr 2017 11:42:56 -0700</pubDate>
-        <link>//jekyll/update/2017/04/23/003.html</link>
-        <guid isPermaLink="true">//jekyll/update/2017/04/23/003.html</guid>
+        <link>//page/2017/04/23/003.html</link>
+        <guid isPermaLink="true">//page/2017/04/23/003.html</guid>
         
         
-        <category>jekyll</category>
-        
-        <category>update</category>
+        <category>page</category>
         
       </item>
     
@@ -40,13 +382,11 @@
         <description>&lt;p&gt;&lt;img src=&quot;/pages/002.png&quot; alt=&quot;PAGE TWO&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 23 Apr 2017 11:42:56 -0700</pubDate>
-        <link>//jekyll/update/2017/04/23/002.html</link>
-        <guid isPermaLink="true">//jekyll/update/2017/04/23/002.html</guid>
+        <link>//page/2017/04/23/002.html</link>
+        <guid isPermaLink="true">//page/2017/04/23/002.html</guid>
         
         
-        <category>jekyll</category>
-        
-        <category>update</category>
+        <category>page</category>
         
       </item>
     
