@@ -5,7 +5,7 @@ body {
   font-size: 17px;
   color: #424142;
   padding-top: 20px;
-  background-image: url("{{ site.url }}/images/grid.png");
+  background-image: url("{{ site.baseurl }}/images/grid.png");
   background-color: gray;
 }
 
@@ -52,7 +52,7 @@ body {
 /*=============================*/
 
 .jumbotron {
-  background-image: url("{{ site.url }}/images/header-bg.jpg");
+  background-image: url("{{ site.baseurl }}/images/header-bg.jpg");
 }
 
 .jumbotron img {
