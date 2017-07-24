@@ -3,5 +3,6 @@ layout: comic
 title:  "2"
 date:   2017-04-23 11:42:56 -0700
 categories: page
+permalink: /002
 ---
 ![PAGE TWO]({{ site.url }}/pages/002.png)
