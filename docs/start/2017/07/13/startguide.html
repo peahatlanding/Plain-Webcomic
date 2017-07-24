@@ -1,5 +1,7 @@
+
 <!DOCTYPE html>
 
+<!--FRONT PAGE LAYOUT-->
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -9,105 +11,65 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Webcomic Theme for Jekyll</title>
-
-    <!-- Google Analytics -->
+    <title>Your Comic!</title>
 
     <!-- Bootstrap core CSS -->
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css"
-          integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
     <!-- Custom styles for webcomic -->
-    <link href="https://peahatlanding.github.io/Webcomic-Jekyll-Theme//css/comic.css" rel="stylesheet">
+    <link rel="stylesheet" href=/css/comic.css>
 
-    <!-- Custom styles for guide -->
-    <link href="https://peahatlanding.github.io/Webcomic-Jekyll-Theme//css/guide.css" rel="stylesheet">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Fredoka+One|Roboto" rel="stylesheet">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Concert+One|Noto+Sans|Patua+One" rel="stylesheet">
+    <!-- Font Awesome-->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
   </head>
 
   <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-dark bg-inverse navbar-full navbar-fixed-top">
-      <ul class="nav navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="https://peahatlanding.github.io/Webcomic-Jekyll-Theme//index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://peahatlanding.github.io/Webcomic-Jekyll-Theme//howto.html">User Guide</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://github.com/peahatlanding/Webcomic-Jekyll-Theme">Download the Code</a>
-        </li>
-      </ul>
-    </nav>
-
     <div class="container">
-
-
+      <div class="row">
 
         <div class="jumbotron">
-
-            <h1 id="webcomic-jekyll-theme">WEBCOMIC JEKYLL THEME!</h1>
-
-<p><a href="https://github.com/peahatlanding/Webcomic-Jekyll-Theme" class="btn btn-primary" role="button" aria-disabled="true">Download Website Files</a></p>
-
-<p>This is the guide for how to use a webcomic theme for Jekyll. If you already know how to use Jekyll and Bootstrap, go ahead and just <a href="https://github.com/peahatlanding/Webcomic-Jekyll-Theme">download the code here</a>.</p>
-
-<p>If you’re more of a beginner, this guide is for you!</p>
-
-
+          <h1>Your Comic Title</h1>
+          <p>Here's the description of your comic!</p>
         </div>
 
-        <div class="content">
-            <div class="row">
-                  <div class="content">
+        <div class="col-md-12 center">
+            <!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" >
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href=/001 >FIRST PAGE</a></li>
+                <li><a href=/about>ABOUT</a></li>
+                <li><a href=/extras>EXTRAS</a></li>
+                <li><a href=/archive>ARCHIVE</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-    <div class="row">
-      <div class="col-md-8 content">
+          <div class="panel center col-md-12">
+                  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-        <p>
-          <h1 id="about-this-guide">About this Guide</h1>
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Webcomic Jekyll Theme!</h1>
+    <p class="post-meta"><time datetime="2017-07-13T14:10:24-07:00" itemprop="datePublished">Jul 13, 2017</time></p>
+  </header>
 
-<p>This guide will show you how to use Jekyll to build a webcomic site and host it for free using Github Pages.</p>
-
-<p>This does require a bit of coding, but it’s not too difficult to learn! If you need help while working on this, feel free to <a href="https://twitter.com/peahat">@ me on Twitter</a>; I’d be happy to chat with anyone working through this guide.</p>
-
-<h2 id="whats-jekyll">What’s Jekyll?</h2>
-
-<p><a href="https://jekyllrb.com/">Jekyll</a> is a free static site generator, which takes a collection of HTML, CSS, markup files and turns them into HTML.</p>
-
-<p>Your files need to be in a certain directory structure for the static site generator to work. When you start working on the website code, you’ll be working with the files in this directory. I recommend you learn a bit about how this directory is structured, since you’ll need to go into the directory to</p>
-
-<p><em>Note:</em> Jekyll is pretty cool! The more you learn about how to use it, the more you can do with your webcomic site.</p>
-
-<h2 id="whats-github-pages">What’s Github Pages?</h2>
-
-<p><a href="http://github.com">Github</a> is a platform for project hosting (mostly code) and version control. You’ll be using it to host your website files.
-<a href="https://pages.github.com/">Github Pages</a> is a free static site hosting service for Github users. You can push Jekyll website files to a special Github repository and it’ll build and host the website for you.</p>
-
-<p>You don’t need to worry about this right now, but if you’re curious, here’s <a href="https://pages.github.com/">Github’s guide on creating your Github page</a>.</p>
-
-<h2 id="this-guide-is-a-constant-work-in-progress">THIS GUIDE IS A CONSTANT WORK IN PROGRESS!!!</h2>
-
-<p>If you get stuck or confused at any time, please let me know!</p>
-
-        </p>
-
-      </div>
-      <div class="col-md-4 content" id="learn more">
-        </div><!--/learn more -->
-      </div><!--/row -->
-
-
-    <div class="row">
-      <div class="col-md-8 content">
-
-        <p>
-          <h1 id="prerequisites">PREREQUISITES</h1>
+  <div class="post-content" itemprop="articleBody">
+    <h1 id="prerequisites">PREREQUISITES</h1>
 
 <p>You will need to install some things in order to use the site.</p>
 
@@ -188,37 +150,19 @@ Once you install Jekyll, you’ll tell it what to do by typing commands here. I�
 <a href="https://pages.github.com/">Github Pages Guide</a>
 I won’t waste your time trying to duplicate it. When you’re finished building your site, go ahead and try it!</p>
 
-        </p>
+  </div>
 
-      </div>
-      <div class="col-md-4 content" id="learn more">
-        </div><!--/learn more -->
-      </div><!--/row -->
+  
+</article>
 
-
-
-
-</div>
-
-
-            </div><!--/row -->
-
-
-        </div>
+          </div><!-- end panel-->
+        </div><!--end col-md-9 center-->
+      </div><!--end row-->
     </div><!-- end container-->
-
-  </body>
-</html>
-
-
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-<script>
-$(function () {
-  $('[data-toggle="popover"]').popover()
-})
-</script>
+  </body>
+</html>
