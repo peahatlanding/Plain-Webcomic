@@ -5,4 +5,4 @@ title: 1
 categories: page
 permalink: /001
 ---
-![PAGE ONE](/pages/001.png)
+![PAGE ONE]({{ site.url }}/pages/001.png)

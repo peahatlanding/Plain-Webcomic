@@ -4,4 +4,4 @@ title:  "3"
 date:   2017-04-23 11:42:56 -0700
 categories: page
 ---
-![PAGE THREE](/pages/003.png)
+![PAGE THREE]({{ site.url }}/pages/003.png)

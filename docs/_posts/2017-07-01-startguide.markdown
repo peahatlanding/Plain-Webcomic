@@ -75,7 +75,7 @@ This will build your website and host it temporarily on your local server. Paste
 
 # STEP FOUR: Add your content!
 
-[Read about using the code here](/docs/howto.html).
+[Read about using the code here]({{ site.url }}/docs/howto.html).
 
 ## Pushing to Github Pages
 
