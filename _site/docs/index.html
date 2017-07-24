@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Webcomic Theme for Jekyll</title>
+
+    <!-- Google Analytics -->
+
+    <!-- Bootstrap core CSS -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css"
+          integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <!-- Custom styles for webcomic -->
+    <link href="https://peahatlanding.github.io/Plain-Webcomic/css/comic.css" rel="stylesheet">
+
+    <!-- Custom styles for guide -->
+    <link href="https://peahatlanding.github.io/Plain-Webcomic/css/guide.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Concert+One|Noto+Sans|Patua+One" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-dark bg-inverse navbar-full navbar-fixed-top">
+      <ul class="nav navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="https://peahatlanding.github.io/Plain-Webcomic/docs/index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://peahatlanding.github.io/Plain-Webcomic/docs/howto.html">User Guide</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/peahatlanding/Plain-Webcomic">Download the Code</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container">
+
+
+
+        <div class="jumbotron">
+
+            <h1 id="Plain-Webcomic">WEBCOMIC JEKYLL THEME!</h1>
+
+<p><a href="https://github.com/peahatlanding/Plain-Webcomic" class="btn btn-primary" role="button" aria-disabled="true">Download Website Files</a></p>
+
+<p>This is the guide for how to use a webcomic theme for Jekyll. If you already know how to use Jekyll and Bootstrap, go ahead and just <a href="https://github.com/peahatlanding/Plain-Webcomic">download the code here</a>.</p>
+
+<p>If you’re more of a beginner, this guide is for you!</p>
+
+
+        </div>
+
+        <div class="content">
+            <div class="row">
+                  <div class="content">
+
+    <div class="row">
+      <div class="col-md-8 content">
+
+        <p>
+          <h1 id="about-this-guide">About this Guide</h1>
+
+<p>This guide will show you how to use Jekyll to build a webcomic site and host it for free using Github Pages.</p>
+
+<p>This does require a bit of coding, but it’s not too difficult to learn! If you need help while working on this, feel free to <a href="https://twitter.com/peahat">@ me on Twitter</a>; I’d be happy to chat with anyone working through this guide.</p>
+
+<h2 id="whats-jekyll">What’s Jekyll?</h2>
+
+<p><a href="https://jekyllrb.com/">Jekyll</a> is a free static site generator, which takes a collection of HTML, CSS, markup files and turns them into HTML.</p>
+
+<p>Your files need to be in a certain directory structure for the static site generator to work. When you start working on the website code, you’ll be working with the files in this directory. I recommend you learn a bit about how this directory is structured, since you’ll need to go into the directory to</p>
+
+<p><em>Note:</em> Jekyll is pretty cool! The more you learn about how to use it, the more you can do with your webcomic site.</p>
+
+<h2 id="whats-github-pages">What’s Github Pages?</h2>
+
+<p><a href="http://github.com">Github</a> is a platform for project hosting (mostly code) and version control. You’ll be using it to host your website files.
+<a href="https://pages.github.com/">Github Pages</a> is a free static site hosting service for Github users. You can push Jekyll website files to a special Github repository and it’ll build and host the website for you.</p>
+
+<p>You don’t need to worry about this right now, but if you’re curious, here’s <a href="https://pages.github.com/">Github’s guide on creating your Github page</a>.</p>
+
+<h2 id="this-guide-is-a-constant-work-in-progress">THIS GUIDE IS A CONSTANT WORK IN PROGRESS!!!</h2>
+
+<p>If you get stuck or confused at any time, please let me know!</p>
+
+        </p>
+
+      </div>
+      <div class="col-md-4 content" id="learn more">
+        </div><!--/learn more -->
+      </div><!--/row -->
+
+
+    <div class="row">
+      <div class="col-md-8 content">
+
+        <p>
+          <h1 id="prerequisites">PREREQUISITES</h1>
+
+<p>You will need to install some things in order to use the site.</p>
+
+<h2 id="a-github-account">A Github Account</h2>
+
+<p>Once your site is completed, you’ll be hosting it on Github Pages, a free service offered to anyone with a Github account.</p>
+
+<p><a href="https://github.com/join">Sign up for Github here</a></p>
+
+<p><strong>Note:</strong> You can use a different webhost if you want. But Github Pages works well with Jekyll because you can push your Jekyll source files directly to</p>
+
+<h2 id="a-text-editor">A Text Editor</h2>
+
+<p>Most computers come pre-installed with a
+This isn’t required, but it’s way easier and more fun to work on markdown files with a text editor. Try <a href="https://www.sublimetext.com/">Sublime</a> or <a href="https://atom.io/">Atom</a> (both free).</p>
+
+<p>I use <a href="https://atom.io/">Atom</a> with the <a href="https://atom.io/themes/fairyfloss">fairyfloss</a> theme for maximum kawaii.</p>
+
+<p><img src="https://peahatlanding.github.io/Plain-Webcomic/images/atom.png" alt="" /></p>
+
+<h2 id="open-terminal">Open Terminal</h2>
+
+<p>If you’re on a Mac, go to your search bar and open Terminal. It will look something like this.</p>
+
+<p><img src="https://peahatlanding.github.io/Plain-Webcomic/images/terminal.png" alt="" />
+Once you install Jekyll, you’ll tell it what to do by typing commands here. I’ll tell you exactly what to type, but I do recommend taking some time to learn these really easy commands.</p>
+
+<h2 id="install-jekyll">Install Jekyll</h2>
+
+<p>The easiest way to install Jekyll is to using RubyGems.
+<a href="https://rubygems.org/pages/download">Ruby Installation Guide.</a></p>
+
+<p>Once you have Ruby installed, you can simply open up your Terminal and type</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>gem install jekyll
+</code></pre>
+</div>
+
+<p><a href="https://jekyllrb.com/docs/installation/">Jekyll Installation Guide</a></p>
+
+<p>Now that you have Jekyll installed, let’s try using it to generate a site. Go to Terminal and navigate to a folder where you want your website to be. Then, type the following and hit enter:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>jekyll new my-comic
+</code></pre>
+</div>
+<p>This will create a new folder called “my-comic” and fill it with the folders and files Jekyll needs to build a static site.</p>
+
+<p>Next, you’ll need to navigate into that new folder.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>cd my-comic
+</code></pre>
+</div>
+<p>to move inside that directory, then type</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>jekyll serve
+</code></pre>
+</div>
+
+<p>This will build your website and host it temporarily on your local server. Paste <code class="highlighter-rouge">http://127.0.0.1:4000</code> into a browser to see it!</p>
+
+<h1 id="step-two-download-the-webcomic-code">STEP TWO: Download the Webcomic Code</h1>
+
+<ol>
+  <li>Go here and download the code. You can save it to wherever you want; just make sure you remember where it is.</li>
+  <li>
+    <p>Use Terminal to navigate to where you’ve saved the directory. Type <code class="highlighter-rouge">jekyll serve</code> into Terminal.</p>
+  </li>
+  <li>If everything’s in the right place, Jekyll will serve the webcomic site to your local server! Paste <code class="highlighter-rouge">http://127.0.0.1:4000</code> into a browser to see it!</li>
+</ol>
+
+<h1 id="step-four-add-your-content">STEP FOUR: Add your content!</h1>
+
+<p><a href="https://peahatlanding.github.com//Plain-Webcomic/docs/howto.html">Read about using the code here</a>.</p>
+
+<h2 id="pushing-to-github-pages">Pushing to Github Pages</h2>
+
+<p>Github has a fantastic guide for creating a Github Page and pushing your code to live.
+<a href="https://pages.github.com/">Github Pages Guide</a>
+I won’t waste your time trying to duplicate it. When you’re finished building your site, go ahead and try it!</p>
+
+        </p>
+
+      </div>
+      <div class="col-md-4 content" id="learn more">
+        </div><!--/learn more -->
+      </div><!--/row -->
+
+
+
+
+</div>
+
+
+            </div><!--/row -->
+
+
+        </div>
+    </div><!-- end container-->
+
+  </body>
+</html>
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script>
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+</script>

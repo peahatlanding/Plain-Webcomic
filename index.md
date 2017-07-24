@@ -2,6 +2,4 @@
 layout: default
 ---
 
-<div class="home">
-
-</div>
+Here's your landing page! You can put whatever you want here. 

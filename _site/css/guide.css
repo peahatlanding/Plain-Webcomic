@@ -1,0 +1,70 @@
+/*CSS overrides for the webcomic guide*/
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 17px;
+  color: #424142;
+  padding-top: 20px;
+  background-image: url(https://peahatlanding.github.io/Plain-Webcomic//images/grid.png);
+  background-color: gray;
+}
+
+body {
+  min-height: 75rem;
+  padding-top: 4.5rem;
+}
+
+.content {
+  background-color: white;
+}
+
+.content h1 {
+  font-size: 30px;
+  font-weight: regular;
+  font-family: 'Concert One', serif;
+}
+
+.content h2 {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Concert One', serif;
+}
+
+.content h3 {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Concert One', serif;
+}
+
+.content img {
+  height: 100%;
+  width: 100%;
+}
+
+.center {
+  margin: auto;
+  float: none;
+}
+
+
+
+/* HEADER STYLES */
+/*=============================*/
+
+.jumbotron {
+  background-image: url(https://peahatlanding.github.io/Plain-Webcomic//images/header-bg.jpg);
+}
+
+.jumbotron img {
+  height: 100%;
+  width: 100%;
+}
+
+.jumbotron h1 {
+  font-family: 'Patua One', cursive;
+}
+
+
+.navbar .navbar-nav {
+    font-family: 'Roboto', sans-serif;
+}

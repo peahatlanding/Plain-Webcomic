@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Webcomic Theme for Jekyll</title>
+
+    <!-- Google Analytics -->
+
+    <!-- Bootstrap core CSS -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css"
+          integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <!-- Custom styles for webcomic -->
+    <link href="https://peahatlanding.github.io/Plain-Webcomic/css/comic.css" rel="stylesheet">
+
+    <!-- Custom styles for guide -->
+    <link href="https://peahatlanding.github.io/Plain-Webcomic/css/guide.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Concert+One|Noto+Sans|Patua+One" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-dark bg-inverse navbar-full navbar-fixed-top">
+      <ul class="nav navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="https://peahatlanding.github.io/Plain-Webcomic/docs/index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://peahatlanding.github.io/Plain-Webcomic/docs/howto.html">User Guide</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/peahatlanding/Plain-Webcomic">Download the Code</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container">
+
+
+
+        <div class="jumbotron">
+
+            <h1 id="Plain-Webcomic">WEBCOMIC JEKYLL THEME!</h1>
+
+<p><a href="https://github.com/peahatlanding/Plain-Webcomic" class="btn btn-primary" role="button" aria-disabled="true">Download Website Files</a></p>
+
+<p>This is the guide for how to use a webcomic theme for Jekyll. If you already know how to use Jekyll and Bootstrap, go ahead and just <a href="https://github.com/peahatlanding/Plain-Webcomic">download the code here</a>.</p>
+
+<p>If you’re more of a beginner, this guide is for you!</p>
+
+
+        </div>
+
+        <div class="content">
+            <div class="row">
+                  <div class="content">
+
+    <div class="row">
+      <div class="col-md-8 content">
+
+        <p>
+          <h1 id="webcomic-site-api">Webcomic Site API</h1>
+
+<p>Here’s how to modify basic things in your webcomic site. This is where it will be really useful to have <a href="https://atom.io/">a text editor</a>.</p>
+
+<p>This site is built using Bootstrap. If you want to make extensive changes, I recommend you take <a href="https://www.codecademy.com/learn/learn-html-css">the HTML/CSS course</a> and <a href="https://www.codecademy.com/courses/web-beginner-en-yjvdd/0/1">the Bootstrap course</a> on Codecademy. It’s REALLY easy if you have even basic knowledge of HTML/CSS and/or Bootstrap.</p>
+
+<p>What do you want to do?</p>
+
+<ul>
+  <li>Update content to the info pages</li>
+  <li>Upload comic pages</li>
+  <li>Change the page background or fonts</li>
+  <li>Change the header background or fonts</li>
+  <li>Change my comic’s title and description</li>
+  <li>Update social media info or add social media icons.</li>
+  <li>Add Google Analytics</li>
+</ul>
+
+<h2 id="i-want-to-update-content-to-the-info-pages">I want to update content to the info pages!</h2>
+
+<p>The theme comes with two info pages: About and Extras. You can edit the content by opening the markdown files called <code class="highlighter-rouge">about.md</code> or <code class="highlighter-rouge">extras.md</code></p>
+
+<p>Markdown is really easy to write in. For example, if you want to make a bullet list, format it like so:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code> My Cats
+
+  - Loki
+  - Meeko
+  - Parking Lot Cat
+
+</code></pre>
+</div>
+<p>It will look like this:</p>
+
+<p>My Cats</p>
+
+<ul>
+  <li>Loki</li>
+  <li>Meeko</li>
+  <li>Parking Lot Cat</li>
+</ul>
+
+<p>If you want to add a link, format it like so:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>[I want to learn more code!](https://www.codecademy.com/)
+</code></pre>
+</div>
+
+<p>It will look like this:
+<a href="https://www.codecademy.com/">I want to learn more code!</a></p>
+
+<h2 id="i-want-to-upload-pages">I want to upload pages!</h2>
+
+<p>Great!! THIS IS SO EASY I’m so excited for you!!</p>
+
+<ol>
+  <li>Name your image file after the page number. For example: 003 (This is optional but makes things a lot easier)</li>
+  <li>Drop your new page into the images folder.</li>
+  <li>Go into the _posts folder and create a new Markdown file.</li>
+  <li>Paste the following content, only replace the {page number} with the actual page number. It’s faster if you duplicate an existing page and just update the page numbers wherever they appear.</li>
+</ol>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>---
+layout: comic
+title:  "1"
+date:   2017-04-23 11:42:56 -0700
+categories: page
+---
+![](/pages/001.png)
+
+</code></pre>
+</div>
+<p>That’s it!!! Rebuild your site and it’ll appear along with the rest of your pages. It will also appear in your Archives page.</p>
+
+<p>If you’ve already pushed your site to live on Github Pages, you can just add the image file and the markdown file to your repository.</p>
+
+<h2 id="change-the-page-background-or-fonts">Change the page background or fonts</h2>
+<p>This will require you to edit the css file. It’s not necessary, but I recommend you learn <a href="https://www.w3schools.com/css/css_syntax.asp">a tiny bit about CSS syntax</a>.</p>
+
+<ol>
+  <li>Open your directory and open the css folder. Then, open comic.css.</li>
+  <li>Ctrl+F “HEADER” to quickly find the header styles.</li>
+  <li>To change the header background, replace the background URL.</li>
+  <li>To change the header fonts, update the font family for jumbotron h1 and jumbotron p.</li>
+  <li>Make sure each line still ends with a semicolon!</li>
+</ol>
+
+<h2 id="i-want-to-change-the-header-background-or-fonts">I want to change the header background or fonts!</h2>
+
+<p>This will require you to edit the css file. It’s not necessary, but I recommend you learn <a href="https://www.w3schools.com/css/css_syntax.asp">a tiny bit about CSS syntax</a>.</p>
+
+<ol>
+  <li>Open your directory and open the css folder. Then, open comic.css.</li>
+  <li>Ctrl+F “HEADER” to quickly find the header styles.</li>
+  <li>To change the header background, replace the backgrould URL.</li>
+  <li>To change the header fonts, update the font family for jumbotron h1 and jumbotron p.</li>
+  <li>Make sure each line still ends with a semicolon!</li>
+</ol>
+
+<p>I use Google Fonts for the website guide. <a href="https://fonts.google.com/">More about Google Fonts</a></p>
+
+<p><em>Note:</em> You can do a lot more if you know a bit of CSS. <a href="#">Consider learning some</a>!</p>
+
+<h2 id="i-want-to-change-my-comics-title-and-description">I want to change my comic’s title and description!</h2>
+
+<ol>
+  <li>Open your directory and open the config.yml file.</li>
+  <li>Change the values for title and description. While you’re here, you can also change the text that will appear on the browser tab!</li>
+  <li>Save your changes, then rebuild your site using <code class="highlighter-rouge">jekyll serve</code>. Anytime you make changes to the config.yml file, you’ll need to rebuild your site.</li>
+</ol>
+
+<h2 id="update-social-media-info-or-add-social-media-icons">Update social media info or add social media icons.</h2>
+
+<h3 id="add-social-media">Add social media</h3>
+<p>This theme comes with a small HTML snippet that includes icons for Tumblr and Twitter.</p>
+
+<p>To add these icons:</p>
+
+<ol>
+  <li>Copy the text below.</li>
+</ol>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="err">/%</span><span class="w"> </span><span class="err">include</span><span class="w"> </span><span class="err">socialmedia.html</span><span class="w"> </span><span class="err">%</span><span class="p">}</span><span class="w">
+</span></code></pre>
+</div>
+
+<ol>
+  <li>
+    <p>Paste it into the markup file where you want it to go. This snippet of code tells Jekyll to pull in the bit of HTML code inside a file called socialmedia in the folder called _includes.</p>
+  </li>
+  <li>
+    <p><strong>IMPORTANT:</strong> Remove the slash from the first bracket.</p>
+  </li>
+</ol>
+
+<h3 id="update-social-media-info">Update social media info</h3>
+
+<p>Open the config.yml file and update these fields with your Tumblr or Twitter URLs.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>twitter_username:
+tumblr_username:
+</code></pre>
+</div>
+
+<p>If you want to add other social media accounts other than Tumblr or Twitter, you’ll need to add button code to the HTML code for the social media icons.</p>
+
+<ol>
+  <li>
+    <p>First, go to <a href="http://fontawesome.io/icons/#brand">Font Awesome</a> and search for the brand icon you want to use. Click on the icon and get the <code class="highlighter-rouge">&lt;i&gt;</code> tag. For example, the <code class="highlighter-rouge">&lt;i&gt;</code> tag for Etsy is <code class="highlighter-rouge">&lt;i class="fa fa-paypal" aria-hidden="true"&gt;&lt;/i&gt;</code>.
+<em>Note:</em> If Font Awesome doesn’t have the icon you want, you’ll need to just make your own.</p>
+  </li>
+  <li>
+    <p>Go to your directory and open the _includes folder. Then, open the socialmedia file or the authorsocialmedia.</p>
+  </li>
+  <li>
+    <p>Paste in the following code, but with the <code class="highlighter-rouge">&lt;i&gt;</code> tag you got from Font Awesome.
+<code class="highlighter-rouge">
+&lt;a href=" "&gt;
+ &lt;i class="fa fa-etsy fa-3x" aria-hidden="true"&gt;&lt;/i&gt;
+&lt;/a&gt;
+</code>
+In the <a> tag, enter the URL for the button.</a></p>
+  </li>
+</ol>
+
+<h2 id="i-want-to-add-google-analytics">I want to add Google Analytics!</h2>
+
+<p>To use Google Analytics to monitor traffic to your site, you’ll need to get a Javascript tracking snippet and put it in your website.</p>
+
+<ol>
+  <li><a href="https://analytics.google.com">Make a Google Analytics account</a>.</li>
+  <li><a href="https://support.google.com/analytics/answer/1008080?visit_id=1-636363448096800079-2450161999&amp;rd=1#trackingID">Get the Javascript tracking snippet</a>.</li>
+  <li>Go to your directory and open the <code class="highlighter-rouge">_layouts</code> folder. Then, open your <code class="highlighter-rouge">default.html</code> file. Find where it says <code class="highlighter-rouge">&lt;!--Google Analytics--&gt;</code> and paste your Javascript tracking snippet underneath.</li>
+</ol>
+
+
+        </p>
+
+      </div>
+      <div class="col-md-4 content" id="learn more">
+
+      </div><!--/row -->
+
+
+
+
+</div>
+
+
+            </div><!--/row -->
+
+
+        </div>
+    </div><!-- end container-->
+
+  </body>
+</html>
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script>
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+</script>
