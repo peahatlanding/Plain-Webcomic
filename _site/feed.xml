@@ -3,10 +3,10 @@
   <channel>
     <title>Your Comic Title</title>
     <description>Here's the description of your comic!</description>
-    <link>https://peahatlanding.github.io/Webcomic-Jekyll-Theme/</link>
-    <atom:link href="https://peahatlanding.github.io/Webcomic-Jekyll-Theme/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 23 Jul 2017 18:20:58 -0700</pubDate>
-    <lastBuildDate>Sun, 23 Jul 2017 18:20:58 -0700</lastBuildDate>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 23 Jul 2017 18:22:54 -0700</pubDate>
+    <lastBuildDate>Sun, 23 Jul 2017 18:22:54 -0700</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -188,8 +188,8 @@ In the &lt;a&gt; tag, enter the URL for the button.&lt;/a&gt;&lt;/p&gt;
 
 </description>
         <pubDate>Thu, 13 Jul 2017 14:10:24 -0700</pubDate>
-        <link>https://peahatlanding.github.io/Webcomic-Jekyll-Theme/guide</link>
-        <guid isPermaLink="true">https://peahatlanding.github.io/Webcomic-Jekyll-Theme/guide</guid>
+        <link>/guide</link>
+        <guid isPermaLink="true">/guide</guid>
         
         
         <category>docs</category>
@@ -273,7 +273,7 @@ Once you install Jekyll, you’ll tell it what to do by typing commands here. I�
 
 &lt;h1 id=&quot;step-four-add-your-content&quot;&gt;STEP FOUR: Add your content!&lt;/h1&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://peahatlanding.github.io/Webcomic-Jekyll-Theme/docs/howto.html&quot;&gt;Read about using the code here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/docs/howto.html&quot;&gt;Read about using the code here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;pushing-to-github-pages&quot;&gt;Pushing to Github Pages&lt;/h2&gt;
 
@@ -282,8 +282,8 @@ Once you install Jekyll, you’ll tell it what to do by typing commands here. I�
 I won’t waste your time trying to duplicate it. When you’re finished building your site, go ahead and try it!&lt;/p&gt;
 </description>
         <pubDate>Thu, 13 Jul 2017 14:10:24 -0700</pubDate>
-        <link>https://peahatlanding.github.io/Webcomic-Jekyll-Theme/docs/start/2017/07/13/startguide.html</link>
-        <guid isPermaLink="true">https://peahatlanding.github.io/Webcomic-Jekyll-Theme/docs/start/2017/07/13/startguide.html</guid>
+        <link>/docs/start/2017/07/13/startguide.html</link>
+        <guid isPermaLink="true">/docs/start/2017/07/13/startguide.html</guid>
         
         
         <category>docs</category>
@@ -303,8 +303,8 @@ I won’t waste your time trying to duplicate it. When you’re finished buildin
 &lt;p&gt;If you’re more of a beginner, this guide is for you!&lt;/p&gt;
 </description>
         <pubDate>Thu, 13 Jul 2017 14:10:24 -0700</pubDate>
-        <link>https://peahatlanding.github.io/Webcomic-Jekyll-Theme/docs/jumbotron/2017/07/13/intro.html</link>
-        <guid isPermaLink="true">https://peahatlanding.github.io/Webcomic-Jekyll-Theme/docs/jumbotron/2017/07/13/intro.html</guid>
+        <link>/docs/jumbotron/2017/07/13/intro.html</link>
+        <guid isPermaLink="true">/docs/jumbotron/2017/07/13/intro.html</guid>
         
         
         <category>docs</category>
@@ -341,8 +341,8 @@ I won’t waste your time trying to duplicate it. When you’re finished buildin
 &lt;p&gt;If you get stuck or confused at any time, please let me know!&lt;/p&gt;
 </description>
         <pubDate>Thu, 13 Jul 2017 14:10:24 -0700</pubDate>
-        <link>https://peahatlanding.github.io/Webcomic-Jekyll-Theme/docs/start/2017/07/13/about.html</link>
-        <guid isPermaLink="true">https://peahatlanding.github.io/Webcomic-Jekyll-Theme/docs/start/2017/07/13/about.html</guid>
+        <link>/docs/start/2017/07/13/about.html</link>
+        <guid isPermaLink="true">/docs/start/2017/07/13/about.html</guid>
         
         
         <category>docs</category>
@@ -353,11 +353,11 @@ I won’t waste your time trying to duplicate it. When you’re finished buildin
     
       <item>
         <title>4</title>
-        <description>&lt;p&gt;&lt;img src=&quot;https://peahatlanding.github.io/Webcomic-Jekyll-Theme/pages/004.png&quot; alt=&quot;PAGE FOUR&quot; /&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;/pages/004.png&quot; alt=&quot;PAGE FOUR&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 23 Apr 2017 11:42:56 -0700</pubDate>
-        <link>https://peahatlanding.github.io/Webcomic-Jekyll-Theme/page/2017/04/23/004.html</link>
-        <guid isPermaLink="true">https://peahatlanding.github.io/Webcomic-Jekyll-Theme/page/2017/04/23/004.html</guid>
+        <link>/page/2017/04/23/004.html</link>
+        <guid isPermaLink="true">/page/2017/04/23/004.html</guid>
         
         
         <category>page</category>
@@ -366,11 +366,11 @@ I won’t waste your time trying to duplicate it. When you’re finished buildin
     
       <item>
         <title>3</title>
-        <description>&lt;p&gt;&lt;img src=&quot;https://peahatlanding.github.io/Webcomic-Jekyll-Theme/pages/003.png&quot; alt=&quot;PAGE THREE&quot; /&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;/pages/003.png&quot; alt=&quot;PAGE THREE&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 23 Apr 2017 11:42:56 -0700</pubDate>
-        <link>https://peahatlanding.github.io/Webcomic-Jekyll-Theme/page/2017/04/23/003.html</link>
-        <guid isPermaLink="true">https://peahatlanding.github.io/Webcomic-Jekyll-Theme/page/2017/04/23/003.html</guid>
+        <link>/page/2017/04/23/003.html</link>
+        <guid isPermaLink="true">/page/2017/04/23/003.html</guid>
         
         
         <category>page</category>
@@ -379,11 +379,11 @@ I won’t waste your time trying to duplicate it. When you’re finished buildin
     
       <item>
         <title>2</title>
-        <description>&lt;p&gt;&lt;img src=&quot;https://peahatlanding.github.io/Webcomic-Jekyll-Theme/pages/002.png&quot; alt=&quot;PAGE TWO&quot; /&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;/pages/002.png&quot; alt=&quot;PAGE TWO&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 23 Apr 2017 11:42:56 -0700</pubDate>
-        <link>https://peahatlanding.github.io/Webcomic-Jekyll-Theme/page/2017/04/23/002.html</link>
-        <guid isPermaLink="true">https://peahatlanding.github.io/Webcomic-Jekyll-Theme/page/2017/04/23/002.html</guid>
+        <link>/page/2017/04/23/002.html</link>
+        <guid isPermaLink="true">/page/2017/04/23/002.html</guid>
         
         
         <category>page</category>
@@ -392,11 +392,11 @@ I won’t waste your time trying to duplicate it. When you’re finished buildin
     
       <item>
         <title>1</title>
-        <description>&lt;p&gt;&lt;img src=&quot;https://peahatlanding.github.io/Webcomic-Jekyll-Theme/pages/001.png&quot; alt=&quot;PAGE ONE&quot; /&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;/pages/001.png&quot; alt=&quot;PAGE ONE&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 23 Apr 2017 11:42:56 -0700</pubDate>
-        <link>https://peahatlanding.github.io/Webcomic-Jekyll-Theme/001</link>
-        <guid isPermaLink="true">https://peahatlanding.github.io/Webcomic-Jekyll-Theme/001</guid>
+        <link>/001</link>
+        <guid isPermaLink="true">/001</guid>
         
         
         <category>page</category>

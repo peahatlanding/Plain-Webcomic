@@ -17,8 +17,7 @@ title: Your Comic Title
 tab_title: Your Comic! #This text shows up on the browser tab
 email:
 description: Here's the description of your comic!
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://peahatlanding.github.io/Webcomic-Jekyll-Theme" # the base hostname & protocol for your site
+url: "https://peahatlanding.github.io/Webcomic-Jekyll-Theme/" # the base hostname & protocol for your site
 
 # Comic Social Media
 twitter_username: http://twitter.com/peahat

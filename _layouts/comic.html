@@ -42,7 +42,7 @@
 
             <div class="comic-panel center">
               <a name="top-page"></a>
-              <a href= {{ page.next.url }}#top-page>{{ content }}</a>
+              <a href= {{ site.url }}{{ page.next.url }}#top-page>{{ content }}</a>
               <ul class="pager">
                 <li><a class="btn btn-outline-secondary" href= {{ site.url }}{{ page.previous.url }}#top-page >PREVIOUS</a></li>
                 <li><a class="btn btn-outline-primary" href= {{ site.url }}{{ page.next.url }}#top-page >NEXT</a></li>
