@@ -80,6 +80,14 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.jumbotron a {
+  color: #424142;
+}
+
+.jumbotron a:visited {
+  color: #424142;
+}
+
 
 
 /* ARCHIVE STYLES */
