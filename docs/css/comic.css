@@ -3,7 +3,7 @@ body {
   font-size: 15px;
   color: #424142;
   padding-top: 20px;
-  background-image: url("/images/grid.png");
+  background-image: url("https://peahatlanding.github.io/Plain-Webcomic//images/grid.png");
   background-color: gray;
 }
 
@@ -54,7 +54,7 @@ body {
 /*=============================*/
 
 .jumbotron {
-  background-image: url("/images/header-bg.jpg");
+  background-image: url("https://peahatlanding.github.io/Plain-Webcomic//images/header-bg.jpg");
   font-family: 'Fredoka One', cursive;
 }
 
