@@ -19,10 +19,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css"
           integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
     <!-- Custom styles for webcomic -->
-    <link href="https://peahatlanding.github.io/Plain-Webcomic/css/comic.css" rel="stylesheet">
+    <link href="https://peahatlanding.github.io/Plain-Webcomic/docs//css/comic.css" rel="stylesheet">
 
     <!-- Custom styles for guide -->
-    <link href="https://peahatlanding.github.io/Plain-Webcomic/css/guide.css" rel="stylesheet">
+    <link href="https://peahatlanding.github.io/Plain-Webcomic/docs//css/guide.css" rel="stylesheet">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Concert+One|Noto+Sans|Patua+One" rel="stylesheet">
@@ -34,13 +34,10 @@
     <nav class="navbar navbar-dark bg-inverse navbar-full navbar-fixed-top">
       <ul class="nav navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="https://peahatlanding.github.io/Plain-Webcomic/docs/index.html">Home</a>
+          <a class="nav-link" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://peahatlanding.github.io/Plain-Webcomic/docs/howto.html">User Guide</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://github.com/peahatlanding/Plain-Webcomic">Download the Code</a>
+          <a class="nav-link" href="howto.html">User Guide</a>
         </li>
       </ul>
     </nav>
@@ -50,43 +47,45 @@
 
 
         <div class="jumbotron">
+          
+            <h1 id="webcomic-jekyll-theme">WEBCOMIC JEKYLL THEME!</h1>
 
-            <h1 id="Plain-Webcomic">WEBCOMIC JEKYLL THEME!</h1>
+<p><a href="https://github.com/peahatlanding/Webcomic-Jekyll-Theme" class="btn btn-primary" role="button" aria-disabled="true">Download Website Files</a></p>
 
-<p><a href="https://github.com/peahatlanding/Plain-Webcomic" class="btn btn-primary" role="button" aria-disabled="true">Download Website Files</a></p>
-
-<p>This is the guide for how to use a webcomic theme for Jekyll. If you already know how to use Jekyll and Bootstrap, go ahead and just <a href="https://github.com/peahatlanding/Plain-Webcomic">download the code here</a>.</p>
+<p>This is the guide for how to use a webcomic theme for Jekyll. If you already know how to use Jekyll and Bootstrap, go ahead and just <a href="https://github.com/peahatlanding/Webcomic-Jekyll-Theme">download the code here</a>.</p>
 
 <p>If you’re more of a beginner, this guide is for you!</p>
 
-
+          
         </div>
 
         <div class="content">
             <div class="row">
                   <div class="content">
-
+    
     <div class="row">
       <div class="col-md-8 content">
 
         <p>
-          <h1 id="webcomic-site-api">Webcomic Site API</h1>
+          <h1 id="editing-your-site">Editing your Site</h1>
 
-<p>Here’s how to modify basic things in your webcomic site. This is where it will be really useful to have <a href="https://atom.io/">a text editor</a>.</p>
+<p>Here’s how to modify basic things in your webcomic site.</p>
 
 <p>This site is built using Bootstrap. If you want to make extensive changes, I recommend you take <a href="https://www.codecademy.com/learn/learn-html-css">the HTML/CSS course</a> and <a href="https://www.codecademy.com/courses/web-beginner-en-yjvdd/0/1">the Bootstrap course</a> on Codecademy. It’s REALLY easy if you have even basic knowledge of HTML/CSS and/or Bootstrap.</p>
 
 <p>What do you want to do?</p>
 
 <ul>
-  <li>Update content to the info pages</li>
-  <li>Upload comic pages</li>
-  <li>Change the page background or fonts</li>
-  <li>Change the header background or fonts</li>
-  <li>Change my comic’s title and description</li>
-  <li>Update social media info or add social media icons.</li>
-  <li>Add Google Analytics</li>
+  <li><a href="#content">Update page content</a></li>
+  <li><a href="#comic">Upload comic pages</a></li>
+  <li><a href="#pagefonts">Change the page background or fonts</a></li>
+  <li><a href="#headerfonts">Change the header background or fonts</a></li>
+  <li><a href="#title">Change my comic’s title and description</a></li>
+  <li><a href="#socialmedia">Update social media info or add social media icons</a></li>
+  <li><a href="#goog">Add Google Analytics</a></li>
 </ul>
+
+<p><a name="content"></a></p>
 
 <h2 id="i-want-to-update-content-to-the-info-pages">I want to update content to the info pages!</h2>
 
@@ -121,6 +120,8 @@
 <p>It will look like this:
 <a href="https://www.codecademy.com/">I want to learn more code!</a></p>
 
+<p><a name="comic"></a></p>
+
 <h2 id="i-want-to-upload-pages">I want to upload pages!</h2>
 
 <p>Great!! THIS IS SO EASY I’m so excited for you!!</p>
@@ -146,7 +147,10 @@ categories: page
 
 <p>If you’ve already pushed your site to live on Github Pages, you can just add the image file and the markdown file to your repository.</p>
 
+<p><a name="pagefonts"></a></p>
+
 <h2 id="change-the-page-background-or-fonts">Change the page background or fonts</h2>
+
 <p>This will require you to edit the css file. It’s not necessary, but I recommend you learn <a href="https://www.w3schools.com/css/css_syntax.asp">a tiny bit about CSS syntax</a>.</p>
 
 <ol>
@@ -156,6 +160,8 @@ categories: page
   <li>To change the header fonts, update the font family for jumbotron h1 and jumbotron p.</li>
   <li>Make sure each line still ends with a semicolon!</li>
 </ol>
+
+<p><a name="headerfonts"></a></p>
 
 <h2 id="i-want-to-change-the-header-background-or-fonts">I want to change the header background or fonts!</h2>
 
@@ -173,6 +179,8 @@ categories: page
 
 <p><em>Note:</em> You can do a lot more if you know a bit of CSS. <a href="#">Consider learning some</a>!</p>
 
+<p><a name="title"></a></p>
+
 <h2 id="i-want-to-change-my-comics-title-and-description">I want to change my comic’s title and description!</h2>
 
 <ol>
@@ -181,9 +189,12 @@ categories: page
   <li>Save your changes, then rebuild your site using <code class="highlighter-rouge">jekyll serve</code>. Anytime you make changes to the config.yml file, you’ll need to rebuild your site.</li>
 </ol>
 
+<p><a name="socialmedia"></a></p>
+
 <h2 id="update-social-media-info-or-add-social-media-icons">Update social media info or add social media icons.</h2>
 
 <h3 id="add-social-media">Add social media</h3>
+
 <p>This theme comes with a small HTML snippet that includes icons for Tumblr and Twitter.</p>
 
 <p>To add these icons:</p>
@@ -204,6 +215,8 @@ categories: page
     <p><strong>IMPORTANT:</strong> Remove the slash from the first bracket.</p>
   </li>
 </ol>
+
+<p><a name="updatecontent"></a></p>
 
 <h3 id="update-social-media-info">Update social media info</h3>
 
@@ -235,6 +248,8 @@ In the <a> tag, enter the URL for the button.</a></p>
   </li>
 </ol>
 
+<p><a name="goog"></a></p>
+
 <h2 id="i-want-to-add-google-analytics">I want to add Google Analytics!</h2>
 
 <p>To use Google Analytics to monitor traffic to your site, you’ll need to get a Javascript tracking snippet and put it in your website.</p>
@@ -250,10 +265,10 @@ In the <a> tag, enter the URL for the button.</a></p>
 
       </div>
       <div class="col-md-4 content" id="learn more">
-
+        
       </div><!--/row -->
 
-
+    
 
 
 </div>
