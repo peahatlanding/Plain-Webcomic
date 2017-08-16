@@ -87,11 +87,17 @@
 
 <h2 id="i-want-to-update-content-to-the-info-pages">I want to update content to the info pages!</h2>
 
-<p>The theme comes with two info pages: About and Extras. You can edit the content by opening the markdown files called <code class="highlighter-rouge">about.md</code> or <code class="highlighter-rouge">extras.md</code></p>
+<p>The theme comes with two info pages: About and Extras. You can edit the content by opening the markdown files 
+  called <code class="highlighter-rouge">about.md</code> or <code class="highlighter-rouge">extras.md</code></p>
 
-<p>Markdown is really easy to write in. For example, if you want to make a bullet list, format it like so:</p>
+<p>Markdown files are text files that are meant to be converted to HTML. You'll need to write your content using Markdown syntax so it will
+  properly convert to HTML. [Read about Markdown Syntax](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf). 
+  Don't worry, Markdown is really easy to write in. In fact, the whole point of it is that it's easier to write than HTML.</p>
+<p>For example, if you want to make a bullet list, format it like so:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code> My Cats
+<div class="highlighter-rouge"><pre class="highlight"><code> 
+
+My Cats
 
   - Loki
   - Meeko
@@ -122,10 +128,10 @@
 
 <h2 id="i-want-to-upload-pages">I want to upload pages!</h2>
 
-<p>Great!! THIS IS SO EASY I’m so excited for you!!</p>
+<p>This is pretty cool. All you need to do is drop your image file into the images folder, then </p>
 
 <ol>
-  <li>Name your image file after the page number. For example: 003 (This is optional but makes things a lot easier)</li>
+  <li>Name your image file after the page number. For example: 003 (Keeping your names and numbering consistent will make it easier for you to update in the future.)</li>
   <li>Drop your new page into the images folder.</li>
   <li>Go into the _posts folder and create a new Markdown file.</li>
   <li>Paste the following content, only replace the {page number} with the actual page number. It’s faster if you duplicate an existing page and just update the page numbers wherever they appear.</li>
@@ -141,39 +147,51 @@ categories: page
 
 </code></pre>
 </div>
-<p>That’s it!!! Rebuild your site and it’ll appear along with the rest of your pages. It will also appear in your Archives page.</p>
+<p>That’s it! Rebuild your site and it’ll appear along with the rest of your pages. It will also appear in your Archives page.</p>
 
 <p>If you’ve already pushed your site to live on Github Pages, you can just add the image file and the markdown file to your repository.</p>
 
 <p><a name="pagefonts"></a></p>
 
-<h2 id="change-the-page-background-or-fonts">Change the page background or fonts</h2>
+<h2 id="change-the-page-background-or-fonts">Change the page's background or the page's fonts</h2>
 
-<p>This will require you to edit the css file. It’s not necessary, but I recommend you learn <a href="https://www.w3schools.com/css/css_syntax.asp">a tiny bit about CSS syntax</a>.</p>
+<p>This will require you to edit the CSS file. It’s not necessary, but I recommend you learn <a href="https://www.w3schools.com/css/css_syntax.asp">a tiny bit about CSS syntax</a>.</p>
 
 <ol>
   <li>Open your directory and open the css folder. Then, open comic.css.</li>
   <li>Ctrl+F “HEADER” to quickly find the header styles.</li>
   <li>To change the header background, replace the background URL.</li>
   <li>To change the header fonts, update the font family for jumbotron h1 and jumbotron p.</li>
-  <li>Make sure each line still ends with a semicolon!</li>
+  <li>Make sure each line still ends with a semicolon! Then, save your work and update the file in your repository.</li>
 </ol>
 
 <p><a name="headerfonts"></a></p>
 
-<h2 id="i-want-to-change-the-header-background-or-fonts">I want to change the header background or fonts!</h2>
+<h2 id="i-want-to-change-the-header-background-or-fonts">I want to change the header's background or the header's fonts!</h2>
 
-<p>This will require you to edit the css file. It’s not necessary, but I recommend you learn <a href="https://www.w3schools.com/css/css_syntax.asp">a tiny bit about CSS syntax</a>.</p>
+<p>This will require you to edit the CSS file. It’s not necessary, but I recommend you learn <a href="https://www.w3schools.com/css/css_syntax.asp">a tiny bit about CSS syntax</a>.</p>
 
+<p>Next, update your CSS file to tell your website when to use this font.</p>        
 <ol>
   <li>Open your directory and open the css folder. Then, open comic.css.</li>
   <li>Ctrl+F “HEADER” to quickly find the header styles.</li>
   <li>To change the header background, replace the backgrould URL.</li>
   <li>To change the header fonts, update the font family for jumbotron h1 and jumbotron p.</li>
-  <li>Make sure each line still ends with a semicolon!</li>
+  <li>Make sure each line still ends with a semicolon! Then, save your work and update the file in your repository.</li>
 </ol>
+        
+<p>If you're changing fonts, you'll need to embed the font by linking to it in the \<head\> section of your site. 
+  This makes sure the website knows where to find the information it needs to display the font.</p>
+<ol>
+  <li>Get the link for your tag. I recommend using Google Fonts. They have a lot of great fonts and 
+    it's easy to embed them into your site. <a href="https://developers.google.com/fonts/docs/getting_started">Learn how to use Google Fonts</a></li>
+  <li>Open your directory and open the layouts folder. Then, open default.html.</li>
+  <li>Ctrl+F “Fonts”, then paste your link in under where it says "Google Fonts".</li>
+  <li>Save your work and update the file in your repository.</li>
+</ol>
+  
+<p></p>
 
-<p>I use Google Fonts for the website guide. <a href="https://fonts.google.com/">More about Google Fonts</a></p>
 
 <p><em>Note:</em> You can do a lot more if you know a bit of CSS. <a href="#">Consider learning some</a>!</p>
 
@@ -184,7 +202,8 @@ categories: page
 <ol>
   <li>Open your directory and open the config.yml file.</li>
   <li>Change the values for title and description. While you’re here, you can also change the text that will appear on the browser tab!</li>
-  <li>Save your changes, then rebuild your site using <code class="highlighter-rouge">jekyll serve</code>. Anytime you make changes to the config.yml file, you’ll need to rebuild your site.</li>
+  <li>Save your changes, then rebuild your site using <code class="highlighter-rouge">jekyll serve</code>. 
+    <b>Note:</b> Anytime you make changes to the config.yml file, you’ll need to rebuild your site.</li>
 </ol>
 
 <p><a name="socialmedia"></a></p>
